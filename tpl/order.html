@@ -1,0 +1,40 @@
+
+<div ng-include="'tpl/include/header.html'"></div>
+<div class="alert alert-info">
+
+    <form>
+        <div class="form-group">
+            <label for="name">收货人</label>
+            <input type="text" id="name" class="form-control"/>
+        </div>
+
+        <div class="form-group">
+            <label>性别</label>
+            <div class="radio-inline">
+                <label>
+                    <input type="radio" name="sex" value="1"/>男
+                </label>
+            </div>
+            <div class="radio-inline">
+                <label>
+                    <input type="radio" name="sex" value="2"/>女
+                </label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">手机号</label>
+            <input type="text" class="form-control" id="phone"/>
+        </div>
+
+        <div class="form-group">
+            <label for="address">地址</label>
+            <textarea class="form-control" id="address"></textarea>
+        </div>
+
+        <input type="button"
+               class="btn btn-success btn-block"
+               value="提交订单"/>
+    </form>
+</div>
+<div ng-include="'tpl/include/footer.html'"></div>
